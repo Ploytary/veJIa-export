@@ -1,0 +1,1 @@
+gh-pages: https://ploytary.github.io/veJIa-export/
