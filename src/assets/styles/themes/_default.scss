@@ -1,0 +1,64 @@
+@use '../abstracts';
+@use 'sass:map';
+
+:root {
+  // colors
+  --color-base-white: hsl(0deg 0% 100%);
+  --color-base-black: hsl(0deg 0% 0%);
+  --color-brand-primary: #343A3F;
+  --color-brand-secondary-500: hsl(219deg 100% 50%);
+  --color-brand-secondary-600: hsl(219deg 100% 64%);
+  --color-brand-secondary-650: hsl(191deg 100% 66%);
+  --color-brand-secondary-700: hsl(219deg 96% 72%);
+  --color-brand-secondary-800: hsl(219deg 88% 80%);
+  --color-brand-secondary-900: hsl(219deg 100% 93%);
+  --color-brand-tertiary: hsl(293deg 47% 30%);
+  --color-neutral-400: hsl(207deg 5% 37%);
+  --color-neutral-550: hsl(204deg 2% 59%);
+  --color-neutral-600: hsl(204deg 3% 61%);
+  --color-neutral-800: hsl(0deg 0% 83%);
+  --color-neutral-900: hsl(0deg 0% 91%);
+  --color-neutral-950: hsl(0deg 0% 96%);
+
+  // font-sizes
+  --font-size-xxs: #{abstracts.to-rem(12px)};
+  --font-size-xs: #{abstracts.to-rem(14px)};
+  --font-size-s: #{abstracts.to-rem(16px)};
+  --font-size-m: #{abstracts.to-rem(18px)};
+  --font-size-xm: #{abstracts.to-rem(20px)};
+  --font-size-l: #{abstracts.to-rem(24px)};
+  --font-size-xl: #{abstracts.to-rem(30px)};
+  --font-size-xxl: #{abstracts.to-rem(32px)};
+  --font-fluid-size-s: #{abstracts.fluid-font-size(14px, 16px, small, medium)};
+  --font-fluid-size-m: #{abstracts.fluid-font-size(14px, 18px, small, medium)};
+  --font-fluid-size-xm: #{abstracts.fluid-font-size(20px, 30px, small, medium)};
+  --font-fluid-size-l: #{abstracts.fluid-font-size(24px, 32px, small, medium)};
+
+  // roundness
+  --roundness-s: 4px;
+  --roundness-m: 5px;
+  --roundness-l: 6px;
+  --roundness-xl: 8px;
+
+
+  // transitions
+  --transition-s: 0.3s;
+
+  // layout
+  --layout-padding-inline: 16px;
+  --layout-content-min-width: 328px;
+  --layout-content-max-width: 1360px;
+  --layout-breakout-max-width: 60px;
+  --breakout-max-width: calc(var(--layout-content-max-width) + var(--layout-breakout-max-width));
+  --responsive-inline-width: minmax(var(--layout-padding-inline), 1fr);
+  --responsive-content-width: max(var(--layout-content-min-width), min(var(--layout-content-max-width), calc(100% - var(--layout-padding-inline) * 2)));
+  --responsive-breakout-width: minmax(0, calc((var(--breakout-max-width) - var(--layout-content-max-width)) / 2));
+
+  // sizes
+  --size-button-s: 40px;
+  --size-button-m: 42px;
+  --size-button-l: 48px;
+
+  // gaps
+  --gap-s: 16px;
+  }

@@ -1,0 +1,67 @@
+mixin main-button(label, icon)
+  -
+    const {href, accent, neutral, type='button'} = attributes;
+    const classAttr = attributes.class ? Array.isArray(attributes.class) ? attributes.class : [attributes.class] : [];
+    const className = [
+      accent && 'main-button--accent',
+      neutral && 'main-button--neutral',
+      ...classAttr,
+    ];
+    
+  if (href)
+    a.button.main-button(href=href, class=className)
+      span.main-button__label= label
+      if (icon)
+        +sprite(icon)
+  else 
+    button.button.main-button(type=type, class=className)
+      span.main-button__label= label
+      if (icon)
+        +sprite(icon)
+
+mixin icon-button(label, icon)
+  -
+    const {href, bordered, badge} = attributes;
+    const classAttr = attributes.class ? Array.isArray(attributes.class) ? attributes.class : [attributes.class] : [];
+
+    const className = [
+      bordered && 'icon-button--bordered',
+      ...classAttr,
+    ];
+
+  if (href)
+    a.button.icon-button(href=href, class=className)
+      span.visually-hidden= label
+      +sprite(icon)
+      if (badge)
+        if (typeof badge !== 'boolean')
+          span.icon-button__badge= Number(badge)
+        else 
+          span.icon-button__badge
+  else 
+    button.button.icon-button(class=className)
+      span.visually-hidden= label
+      +sprite(icon)
+      if (badge)
+        span.icon-button__badge= Number(badge)
+
+mixin action-button(label, icon)
+  - const {href} = attributes;
+  - const className = attributes.class;
+  if (href)
+    a.button.action-button(href=href, class=className)
+      +sprite(icon)
+      .standalone-menu__label= label
+  else
+    button.button.action-button(class=className)
+      +sprite(icon)
+      .standalone-menu__label= label
+
+mixin social-button(label, icon)
+  +icon-button(label, icon)&attributes(attributes)(class='social-button')
+
+mixin burger-button()
+  button.button.burger-button&attributes(attributes)
+    span.visually-hidden Каталог
+    +sprite('burger-menu')
+    +sprite('cross')

@@ -1,0 +1,64 @@
+@use '../abstracts';
+
+:root {
+  --main-font: "MazaW00-Regular", sans-serif;
+  --accent-font: "Tenor Sans", sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: var(--font-size-s);
+  line-height: 120%;
+}
+
+.lang-selector {
+  font-size: var(--font-size-xs);
+}
+
+.contact-details {
+  @include abstracts.mq-from(medium) {
+    font-size: var(--font-size-xs);
+  }
+}
+
+.link {
+  @include abstracts.mq-from(medium) {
+    font-size: var(--font-size-xs);
+  }
+}
+
+.section {
+  &__title {
+    font-family: var(--accent-font);
+    font-size: var(--font-fluid-size-l);
+    line-height: 1.125;
+    font-weight: 400;
+  }
+}
+
+.hero-section {
+  &__description {
+    font-family: var(--accent-font);
+    font-size: var(--font-fluid-size-m);
+    line-height: 1.33;
+  }
+}
+
+.main-button {
+  min-height: var(--size-button-s);
+  font-size: var(--font-size-xs);
+
+  &--neutral {
+    font-size: var(--font-size-s);
+
+    @include abstracts.mq-from(medium) {
+    font-size: var(--font-size-s);
+    }
+  }
+}
+
+.page-header-mobile {
+  &__top-row {
+    font-size: var(--font-size-xs);
+  }
+}

@@ -1,0 +1,12 @@
+extends ../layout/page-layout
+
+block variables
+  -
+    const pageScripts = [];
+    const pageTitle = 'Главная страница тестового';
+    const currentPageSlug = 'home';
+
+block content
+  main(class= 'page-content')
+    h1.visually-hidden= pageTitle
+    include ../components/hero-section.pug

@@ -1,0 +1,393 @@
+-
+  const pageHeaderContent = {
+    tel: {
+      icon: 'phone-simple',
+      label: '+7 555 555-37-50',
+      href: 'tel:+75555553750',
+    },
+    city: {
+      icon: 'pin',
+      label: 'Сайлент-Хилл',
+    },
+    links: [
+      {
+        label: 'Доставка',
+        href: '#',
+      },
+      {
+        label: 'Оплата',
+        href: '#',
+      },
+      {
+        label: 'Контакты',
+        href: '#',
+      },
+    ],
+    languageSelector: {
+      icon: 'planet',
+      variants: [
+        'ru',
+        'en',
+      ],
+    },
+    schedule: {
+      icon: 'clock',
+      label: 'Ежедневно 9:00 - 21:00',
+    },
+    socials: [
+      {
+        icon: 'telegram',
+        a11y: 'Telegram',
+        href: '#',
+      },
+      {
+        icon: 'whatsapp',
+        a11y: 'Whatsapp',
+        href: '#',
+      },
+    ],
+    iconButtons: [
+      {
+        icon: 'heart',
+        a11y: 'Избранное',
+        name: 'favorite',
+        href: '#',
+      },
+      {
+        icon: 'hunter',
+        a11y: '??',
+        name: 'hunter',
+        href: '#',
+      },
+      { 
+        icon: 'chest',
+        a11y: 'Корзина',
+        name: 'cart',
+        href: '#',
+      },
+    ],
+    actionButton: {
+      label: 'Собрать компьютер',
+      icon: 'plus',
+      href: '#',
+      list: [
+        'url',
+        'url',
+        'url',
+      ],
+    },
+  };
+
+  const catalogMenu = {
+    label: 'Каталог',
+    icon: 'burger-menu',
+    link: {
+      'smartngadget': {
+        label: 'Смартфорны и гаджеты',
+        icon: 'phone',
+        link: {
+          'some1': {
+            label: 'Смартфоны',
+            link: {
+              'some1': {
+                label: 'Apple iPhone',
+                link: 'url',
+              },
+              'some2': {
+                label: 'Смартфоны',
+                link: 'url',
+              },
+              'some3': {
+                label: 'iPhone16',
+                link: 'url',
+              },
+              'some4': {
+                label: 'Складные',
+                link: 'url',
+              },
+              'some5': {
+                label: 'realme',
+                link: 'url',
+              },
+              'some6': {
+                label: 'Huawei Mate X6',
+                link: 'url',
+              },
+              'some7': {
+                label: 'Кнопочные',
+                link: 'url',
+              },
+              'some8': {
+                label: 'Домашние',
+                link: 'url',
+              },
+              'some9': {
+                label: 'Samsung',
+                link: 'url',
+              },
+            },
+          },
+          'some2': {
+            label: 'Гаджеты',
+            link: {
+              'some1': {
+                label: 'Смарт-часы',
+                link: 'url',
+              },
+              'some2': {
+                label: 'Смарт-кольца',
+                link: 'url',
+              },
+              'some3': {
+                label: 'Наушники',
+                link: 'url',
+              },
+              'some4': {
+                label: 'Гарнитуры',
+                link: 'url',
+              },
+              'some5': {
+                label: 'Портативное аудио',
+                link: 'url',
+              },
+              'some6': {
+                label: 'Умные гаджеты',
+                link: 'url',
+              },
+              'some7': {
+                label: 'Очки VR',
+                link: 'url',
+              },
+              'some8': {
+                label: 'для блогеров',
+                link: 'url',
+              },
+            },
+          },
+        },
+      },
+      'nouts': {
+        label: 'Ноутбуки и компьютеры',
+        icon: 'laptop',
+        link: '#cost2',
+      },
+      'tv': {
+        label: 'Телевизоры и цифровое ТВ',
+        icon: 'monitor',
+        link: '#cost3',
+      },
+      'audio': {
+        label: 'Аудиотехника',
+        icon: 'speaker',
+        link: '#cost3',
+      },
+      'sale': {
+        label: 'Акции',
+        icon: 'fire',
+        link: '#cost3',
+      },
+      'newItems': {
+        label: 'Новинки',
+        icon: 'label-new',
+        link: '#cost3',
+      },
+    },
+  };
+
+  const salesMenu = {
+    label: 'Акции',
+    icon: 'fire',
+    link: 'url',
+  };
+
+  const hotMenu = {
+    label: 'Горячее предложение',
+    icon: 'lightning',
+    link: {
+      'some1': {
+        label: 'Пункт#1',
+        link: 'url',
+      },
+      'some2': {
+        label: 'Пункт#2',
+        link: 'url',
+      },
+    },
+  };
+
+  const giftSetMenu = {
+    label: 'Подарочные наборы',
+    icon: 'chest-skull',
+    link: {
+      'some1': {
+        label: 'Кому',
+        icon: 'people',
+        link: {
+          'some1': {
+            label: 'Для мужчин',
+            link: '#',
+            count: 123,
+          },
+          'some2': {
+            label: 'Для женщин',
+            link: '#',
+            count: 63,
+          },
+          'some3': {
+            label: 'Папе',
+            link: '#',
+            count: 120,
+          },
+          'some4': {
+            label: 'Сотрудникам',
+            link: '#',
+            count: 30,
+          },
+          'some5': {
+            label: 'Мужу',
+            link: '#',
+            count: 120,
+          },
+          'some6': {
+            label: 'Корпоративный',
+            link: '#',
+            count: 100,
+          },
+        },
+      },
+      'some2': {
+        label: 'Повод',
+        icon: 'blade',
+        link: 'url',
+      },
+      'some3': {
+        label: 'Наполнение',
+        icon: 'computer-case',
+        link: 'url',
+      },
+    },
+  };
+
+  const eventMenu = {
+    label: 'События',
+    icon: 'scroll',
+    link: {
+      'some1': {
+        label: 'ИгроМир',
+        link: 'url',
+      },
+      'some2': {
+        label: 'Мероприятия',
+        link: 'url',
+      },
+      'some3': {
+        label: 'Мастер-классы',
+        link: 'url',
+      },
+    },
+  };
+
+  const brandsMenu = {
+    label: 'Наши бренды',
+    icon: 'mascot',
+    link: {
+      'some1': {
+        label: 'Пункт#1',
+        link: 'url',
+      },
+      'some2': {
+        label: 'Пункт#2',
+        link: 'url',
+      },
+      'some3': {
+        label: 'Пункт#3',
+        link: 'url',
+      },
+      'some4': {
+        label: 'Пункт#4',
+        link: 'url',
+      },
+    },
+  };
+
+  const computerMenu = {
+    label: 'Собрать компьютер',
+    icon: 'plus',
+    link: '#'
+  };
+
+  const menuHierarhy = {
+    'catalog': catalogMenu,
+    'sales': salesMenu,
+    'hot': hotMenu,
+    'giftSet': giftSetMenu,
+    'events': eventMenu,
+    'brands': brandsMenu,
+  };
+
+header.page-header-mobile
+  .page-header-mobile__top-row
+    .page-header-mobile__top-row-inner
+      +lang-selector()(class='page-header-mobile__lang-selector')
+      +phone()(class='page-header-mobile__phone')
+  .page-header-mobile__bottom-row
+    .page-header-mobile__left-column
+      +burger-button()(class='page-header-mobile__menu-button')
+      each iconButton in [pageHeaderContent.iconButtons[1]]
+        +icon-button(iconButton.a11y, iconButton.icon)(href=iconButton.href, bordered, badge)
+    +logo()(class='page-header-mobile__logo')
+    .page-header-mobile__right-column
+      each iconButton, index in [pageHeaderContent.iconButtons[0], pageHeaderContent.iconButtons[2]]
+        if(index === 1)
+          +icon-button(iconButton.a11y, iconButton.icon)(href=iconButton.href, bordered, badge="20")
+        else
+          +icon-button(iconButton.a11y, iconButton.icon)(href=iconButton.href, bordered, badge)
+    +search-form()(class='page-header-mobile__search-form')
+  .page-header-mobile__menu.burger-menu
+    .page-header-mobile__menu-headline
+      button.burger-menu__content-close-button
+      .page-header-mobile__menu-headline-column
+        +city()
+        +schedule()
+      .page-header-mobile__socials.socials 
+        each social in pageHeaderContent.socials
+          +social-button(social.a11y, social.icon)(href=social.href)
+    +wordpress-navigation-menu(menuHierarhy)(class='page-header-mobile__navigation')
+    +action-button(pageHeaderContent.actionButton.label, pageHeaderContent.actionButton.icon)(href='#')
+    .page-header-mobile__links
+      each link in pageHeaderContent.links
+        a.link(href=link.href)= link.label
+
+header.page-header-desktop
+  .page-header-desktop__top-row
+    .page-header-desktop__top-row-inner
+      .page-header-desktop__top-row-column
+        +city()
+        +phone()(class='page-header-desktop__phone')
+      +schedule()
+      .page-header-desktop__links
+        each link in pageHeaderContent.links
+          a.link(href=link.href)= link.label
+  .page-header-desktop__bottom-row
+    +burger-button()(class='page-header-desktop__menu-button')
+    +logo()(class='page-header-desktop__logo')
+    .page-header-desktop__some
+      +search-form()(class='page-header-desktop__search-form')
+      .page-header-desktop__socials.socials 
+        each social in pageHeaderContent.socials
+          +social-button(social.a11y, social.icon)(href=social.href)
+      +lang-selector()(class='page-header-desktop__lang-selector')
+      .page-header-desktop__icon-buttons
+        each iconButton, index in pageHeaderContent.iconButtons
+          if(index === (pageHeaderContent.iconButtons.length  - 1))
+            +icon-button(iconButton.a11y, iconButton.icon)(href=iconButton.href, bordered, badge="20")
+          else
+            +icon-button(iconButton.a11y, iconButton.icon)(href=iconButton.href, bordered, badge)
+    .page-header-desktop__navigation-wrapper
+      +wordpress-navigation-menu(menuHierarhy)(class='page-header-desktop__navigation')
+      .page-header-desktop__no-depth-navigation-viewport
+      .page-header-desktop__navigation-viewport
+        .left-column 
+        .right-column
+      .page-header-desktop__navigation-backdrop
+    +action-button(pageHeaderContent.actionButton.label, pageHeaderContent.actionButton.icon)(href='#', class='page-header-desktop__action-button')

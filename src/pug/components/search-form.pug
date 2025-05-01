@@ -1,0 +1,6 @@
+mixin search-form()
+  form.search-form&attributes(attributes)
+    label
+      span.visually-hidden Поиск
+      input&attributes(attributes)(type="search", name="s", size="3", placeholder="Поиск товаров...")
+    +main-button('Найти', 'search')(type='submit', accent, class='search-form__button')

@@ -1,0 +1,8 @@
+mixin lang-selector()
+  .lang-selector&attributes(attributes)
+    +sprite(pageHeaderContent.languageSelector.icon)
+    ul.lang-selector__variants
+      each variant, index in pageHeaderContent.languageSelector.variants 
+        - const selectedClass = index === 0 ? 'lang-selector__variant--selected' : false;
+        li.lang-selector__variant(class=selectedClass)
+          a(href='#')= variant

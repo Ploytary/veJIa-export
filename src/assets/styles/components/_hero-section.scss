@@ -1,0 +1,61 @@
+@use '../abstracts';
+
+.hero-section {
+  row-gap: 14px;
+  justify-items: start;
+  background-image: linear-gradient(to right bottom, var(--color-brand-tertiary) 30%, var(--color-brand-secondary-650));
+  color: var(--color-base-white);
+  overflow: hidden;
+  padding-bottom: 193px;
+
+  @include abstracts.page-grid(2, var(--gap-s));
+
+  &__button {
+    grid-column: column-1;
+  }
+
+  &__decor-image-wrapper {
+    position: relative;
+    grid-column: column-2 / full-width-right;
+  }
+
+  &__decor-image {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    object-fit: none;
+    object-position: 0 0;
+    transform: translate(-8px, -30px)
+  }
+
+  &__description {
+    overflow: hidden;
+    /* stylelint-disable-next-line value-no-vendor-prefix */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+
+  @include abstracts.mq-from(medium) {
+    row-gap: 26px;
+    padding-bottom: 85px;
+
+    @include abstracts.page-grid(12, var(--gap-s));
+
+    &__title, &__description, &__button {
+      grid-column: column-1 / column-7
+    }
+
+    &__decor-image-wrapper {
+      grid-row: 1;
+      grid-column: column-8;
+    }
+
+    &__decor-image {
+      transform: translate(-8px, -183px);
+    }
+  }
+}

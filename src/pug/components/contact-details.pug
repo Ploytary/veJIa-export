@@ -1,0 +1,14 @@
+mixin phone()
+  a.contact-details&attributes(attributes)(href=pageHeaderContent.tel.href)
+    +sprite(pageHeaderContent.tel.icon)
+    span= pageHeaderContent.tel.label
+
+mixin city()
+  p.contact-details
+    +sprite(pageHeaderContent.city.icon)
+    span= pageHeaderContent.city.label
+
+mixin schedule()
+  p.contact-details
+    +sprite(pageHeaderContent.schedule.icon)
+    span= pageHeaderContent.schedule.label

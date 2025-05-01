@@ -1,0 +1,26 @@
+@use '../abstracts';
+
+.contact-details {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+
+  .svg-icon {
+    color: var(--color-neutral-550);
+    width: 16px;
+    height: 16px;
+  }
+
+  @include abstracts.mq-from(medium) {
+    padding-block: 8px;
+  }
+}
+
+a.contact-details {
+  transition-duration: var(--transition-s);
+  transition-property: color;
+
+  &:hover {
+    color: var(--color-brand-secondary-700);
+  }
+}

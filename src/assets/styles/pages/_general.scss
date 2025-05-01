@@ -1,0 +1,8 @@
+@use '../abstracts';
+
+:root {
+}
+
+main {
+  @include abstracts.page-grid;
+}

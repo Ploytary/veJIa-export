@@ -1,0 +1,63 @@
+@use '../abstracts';
+
+.lang-selector {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-neutral-600);
+  text-transform: uppercase;
+
+  &__variants {
+    display: flex;
+    gap: 4px;
+    align-self: stretch;
+
+    a {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+  }
+
+  &__variant {
+    transition-duration: var(--transition-s);
+    transition-property: color;
+
+    &--selected {
+      color: var(--color-brand-primary);
+    }
+
+    &:has(+ li) {
+      display: flex;
+      gap: 4px;
+      position: relative;
+      align-items: center;
+  
+      &::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 1em;
+        background-color: var(--color-brand-primary);
+      }
+    }
+
+    &:hover {
+      color: var(--color-brand-secondary-600);
+    }
+  }
+
+  .svg-icon {
+    color: var(--color-neutral-550);
+    width:  14px;
+    height: 14px;
+  }
+
+  @include abstracts.mq-from(medium) {
+    .svg-icon {
+      color: var(--color-neutral-550);
+      width:  24px;
+      height: 24px;
+    }
+  }
+}

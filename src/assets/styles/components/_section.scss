@@ -1,0 +1,13 @@
+@use '../abstracts';
+
+.section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include abstracts.page-grid-full-width;
+
+  @include abstracts.mq-from(medium) {
+    padding-block: 83px;
+    padding-left: 85px;
+  }
+}

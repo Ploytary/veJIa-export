@@ -1,0 +1,18 @@
+.burger-menu {
+  z-index: 1;
+  display: none;
+
+  &--open {
+    display: flex;
+  }
+
+  &__content-close-button {
+    display: none;
+  }
+
+  &__backdrop {
+    position: fixed;
+    inset: 0;
+  }
+}
+
